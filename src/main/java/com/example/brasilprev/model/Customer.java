@@ -1,5 +1,7 @@
 package com.example.brasilprev.model;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
 @Entity
 @Table(name = "customer")
 public class Customer {
