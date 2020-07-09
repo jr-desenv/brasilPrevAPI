@@ -8,4 +8,6 @@ public class Product {
 	
 	private String price;
 
+	
+	
 }
