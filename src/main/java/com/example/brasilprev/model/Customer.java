@@ -1,16 +1,69 @@
 package com.example.brasilprev.model;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Table;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.data.annotation.Id;
 
 @Entity
 @Table(name = "customer")
 public class Customer {
 	
-	private Long Id;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long code;
 	
+	public Long getCode() {
+		return code;
+	}
+
+	public void setCode(Long code) {
+		this.code = code;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getBithdate() {
+		return bithdate;
+	}
+
+	public void setBithdate(String bithdate) {
+		this.bithdate = bithdate;
+	}
+
 	private String name;
 	
 	private int age;
