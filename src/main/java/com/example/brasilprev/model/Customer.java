@@ -1,5 +1,8 @@
 package com.example.brasilprev.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 @Entity
