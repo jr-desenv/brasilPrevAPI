@@ -31,6 +31,14 @@ public class Customer {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	public String getSsn() {
+		return ssn;
+	}
+
+	public void setSsn(String ssn) {
+		this.ssn = ssn;
+	}
 
 	public int getAge() {
 		return age;
@@ -66,6 +74,8 @@ public class Customer {
 
 	private String name;
 	
+	private String ssn;
+	
 	private int age;
 	
 	private String gender;
@@ -74,5 +84,4 @@ public class Customer {
 	
 	private String bithdate;
 	
-
 }

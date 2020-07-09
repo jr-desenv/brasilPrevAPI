@@ -23,4 +23,5 @@ public class CustomerResource {
 		return customerRepository.findAll();
 	}
 	
+	
 }
