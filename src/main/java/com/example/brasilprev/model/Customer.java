@@ -5,7 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Table;
 
-import org.springframework.boot.autoconfigure.domain.EntityScan;
+import javax.persistence.*;
 import org.springframework.data.annotation.Id;
 
 @Entity
@@ -15,6 +15,18 @@ public class Customer {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long code;
+	
+	private String name;
+	
+	private String ssn;
+	
+	private int age;
+	
+	private String gender;
+	
+	private String address;
+	
+	private String bithdate;
 	
 	public Long getCode() {
 		return code;
@@ -72,16 +84,5 @@ public class Customer {
 		this.bithdate = bithdate;
 	}
 
-	private String name;
-	
-	private String ssn;
-	
-	private int age;
-	
-	private String gender;
-	
-	private String address;
-	
-	private String bithdate;
 	
 }
